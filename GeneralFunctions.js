@@ -1,5 +1,6 @@
 // High e and low E are distinguished by captialization. Low "E" is Uppercase and High "e" is lowercase
 // First export is readline
+export const fsLibrary = require('fs');
 export const readline = require('readline');
 export const guitarSrings = ["E", "B", "G", "D", "A", "e"];
 export const naturalNotes = ["C", "D", "E", "F", "G", "A", "B"];
@@ -33,8 +34,13 @@ export function RanTTNoteF(totaltwelveNoteFlat) {
     totaltwelveNoteFlat = ttNotesF[Math.floor(Math.random() * ttNotesF.length)];
     return totaltwelveNoteFlat;
 }
+//scales
+export const firstPentatonic = [];
 
 
+
+
+//scales
 export function ask(prompt) {
     return new Promise((resolve) => {
         const rl = readline.createInterface({
@@ -47,3 +53,15 @@ export function ask(prompt) {
         });
     })
 }
+
+// Data writing and reading funcitons
+export let userFileName = "";
+export function savingPresets() {
+    let userFileName = await ask("What would you like your preset to be named? ");
+    fsLibrary.writeFile(`${userFileName}.txt`, data, (error) => {
+        
+        // In case of a error throw err exception.
+        if (error) throw err;
+    })
+    
+    }
