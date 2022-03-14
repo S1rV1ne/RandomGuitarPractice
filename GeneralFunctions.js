@@ -1,4 +1,5 @@
 // High e and low E are distinguished by captialization. Low "E" is Uppercase and High "e" is lowercase
+// First export is readline
 export const readline = require('readline');
 export const guitarSrings = ["E", "B", "G", "D", "A", "e"];
 export const naturalNotes = ["C", "D", "E", "F", "G", "A", "B"];
