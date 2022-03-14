@@ -1,0 +1,31 @@
+// Idea for chords: add in a way to ${} in sus, 7, ect chords. Far more complex but rad. 
+// Add a complacatoin to ask the user if they want sus or 7 chords added or not.
+// Adding chalk to color code the terminal in a variety of manners (Color coded strings, chords, notes, highlighting complications such as sus, making flats italic)
+
+/* Add random note progressions and full progressions.
+    Add reverse functions 
+Seperate function of random single notes on random strings to test knowledge of frets.
+*/
+
+/*
+Example of Sierra's code that shortens
+const charset = ["abcdef"];
+const char = charset[Math.floor(Math.random() * charset.length)];
+console.log(char);
+
+*/
+
+/* Add random note progressions and full progressions.
+    Add reverse functions 
+Seperate function of random single notes on random strings to test knowledge of frets.
+*/
+
+/*
+Blank tab
+e|---------------------------------------------------------------------------|
+B|---------------------------------------------------------------------------|
+G|---------------------------------------------------------------------------|
+D|---------------------------------------------------------------------------|
+A|---------------------------------------------------------------------------|
+E|---------------------------------------------------------------------------|
+*/
